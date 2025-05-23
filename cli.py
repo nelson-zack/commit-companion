@@ -67,8 +67,10 @@ To uninstall, delete `.git/hooks/prepare-commit-msg`.
 )
 def install_hook():
     hook_path = os.path.join(".git", "hooks", "prepare-commit-msg")
-    script = f"""#!/bin/bash
-commit-companion suggest --tone neutral --type feat --auto > .git/COMMIT_EDITMSG
+    script = """#!/bin/bash
+TYPE=${TYPE:-feat}
+TONE=${TONE:-neutral}
+commit-companion suggest --tone "$TONE" --type "$TYPE" --auto > .git/COMMIT_EDITMSG
 """
     try:
         with open(hook_path, "w") as f:
@@ -77,3 +79,21 @@ commit-companion suggest --tone neutral --type feat --auto > .git/COMMIT_EDITMSG
         click.echo("✅ Git hook installed successfully.")
     except Exception as e:
         click.echo(f"❌ Failed to install hook: {e}")
+
+@cli.command(
+    help="""
+Uninstall Commit Companion Git hook from the current repo.
+
+Removes the `prepare-commit-msg` file created by the install-hook command.
+"""
+)
+def uninstall_hook():
+    hook_path = os.path.join(".git", "hooks", "prepare-commit-msg")
+    try:
+        if os.path.exists(hook_path):
+            os.remove(hook_path)
+            click.echo("🗑️ Git hook uninstalled successfully.")
+        else:
+            click.echo("ℹ️ No hook found to uninstall.")
+    except Exception as e:
+        click.echo(f"❌ Failed to uninstall hook: {e}")
