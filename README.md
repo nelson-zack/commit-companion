@@ -32,34 +32,39 @@ pip install -r requirements.txt
 OPENAI_API_KEY=sk-...
 ```
 
+### 3. Install CLI tool locally:
+```bash
+pip install --editable .
+```
+
 ## 🔧 Usage
 
-### CLI (manual mode):
+### CLI (manual):
 ```bash
-python main.py --tone casual --type feat
+commit-companion suggest --tone casual --type feat
 ```
 Will output something like:
 ```bash
 feat: add basic functionality to README.md
 ```
 
-### Git Hook (auto mode):
-To auto-generate messages on git commit, add this to .git/hooks/prepare-commit-msg:
+### Git Hook (auto):
+Install the Git hook with:
 ```bash
-#!/bin/bash
-python3 /full/path/to/main.py --tone neutral --type feat --auto > .git/COMMIT_EDITMSG
+commit-companion install-hook
 ```
-Make it executable:
+This sets up .git/hooks/prepare-commit-msg to auto-fill your commit message using GPT.
+
+To uninstall:
 ```bash
-chmod +x .git/hooks/prepare-commit-msg
+rm .git/hooks/prepare-commit-msg
 ```
-Now every git commit will pre-fill the message with a GPT-generated summary.
 
 ## 🧠 Roadmap Ideas
 - Config file support (.commitcompanion.json)
 - VS Code extension
 - Web version / hosted API
-- pip install commit-companion CLI packaging
+- PyPI: pip install commit-companion
 
 ## 💡 Why Use This?
 Writing commit messages breaks flow. Commit Companion helps you:
