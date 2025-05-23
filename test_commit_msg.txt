@@ -7,4 +7,4 @@ ChatCompletion(id='chatcmpl-Ba9U8x1M6GXoSd7kl6A0gnxtjYmyA', choices=[Choice(fini
 
 feat: add new updates to README.md including test changes, another change, and confirmation that the hook is functioning.
 
-Use this commit message? [Y/n]: 
+Use this commit message? [Y/n]: Test CLI is working

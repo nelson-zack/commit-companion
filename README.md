@@ -69,4 +69,4 @@ Writing commit messages breaks flow. Commit Companion helps you:
 
 ## 📄 License
 
-MIT License.
+MIT License.# test hook
