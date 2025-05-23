@@ -48,7 +48,7 @@ Will output something like:
 ```bash
 feat: add basic functionality to README.md
 ```
-This is example of how that would be used:
+Example usage:
 ```bash
 git add <file>
 commit-companion suggest --tone casual --type feat
@@ -64,7 +64,7 @@ commit-companion install-hook
 This creates a .git/hooks/prepare-commit-msg script that auto-generates commit messages using GPT.
 By default, it uses --tone neutral and --type feat.
 
-#### With the Git hook installed, just:
+#### Once installed, your flow becomes:
 
 ```bash
 git add <file>      # Stage your changes
@@ -72,9 +72,9 @@ git commit          # Commit Companion will auto-suggest the message
 git push            # Push to remote
 ```
 
-#### Customizing the hook per commit:
+#### Customize per commit:
 
-You can override one or both like this:
+Override tone or type like this:
 ```bash
 TYPE=fix git commit
 TONE=funny git commit
@@ -85,6 +85,35 @@ Uninstall the hook:
 ```bash
 commit-companion uninstall-hook
 ```
+
+### 🔁 Optional: Global Installation
+
+To use commit-companion from any repo without activating a virtual environment:
+#### 1. Install globally:
+```bash
+pip install .
+```
+
+#### 2.	Add your OpenAI key to your shell config (~/.zshrc or ~/.bashrc):
+```bash
+export OPENAI_API_KEY="sk-..."
+```
+
+#### 3.	Ensure your Python bin path is on your system PATH:
+```bash
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.12/bin"
+```
+
+#### 4.	Reload your shell:
+```bash
+source ~/.zshrc   # or ~/.bashrc
+```
+
+#### 5.	Use it anywhere:
+```bash
+commit-companion install-hook
+```
+
 
 ## 🧠 Roadmap Ideas
 - Config file support (.commitcompanion.json)
