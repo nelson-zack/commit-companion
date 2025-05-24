@@ -38,7 +38,7 @@ OPENAI_API_KEY=sk-...
 pip install --editable .
 ```
 
-## 🔧 Usage
+## Usage
 
 ### CLI (manual):
 ```bash
