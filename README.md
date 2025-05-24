@@ -5,18 +5,18 @@ Save time, stay in flow, and write better commit messages — automatically.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🧠 Uses GPT to summarize your staged diffs into clear commit messages
-- 🛠️ Supports [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- 🎭 Tone customization (`neutral`, `casual`, `formal`, `funny`, etc.)
-- 🧩 Git hook integration via `prepare-commit-msg`
-- ⚙️ Supports environment variables for default `TYPE` and `TONE`
-- ✅ Optional auto mode to skip confirmation (for non-interactive use)
+- Uses GPT to summarize your staged diffs into clear commit messages
+- Supports [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- Tone customization (`neutral`, `casual`, `formal`, `funny`, etc.)
+- Git hook integration via `prepare-commit-msg`
+- Supports environment variables for default `TYPE` and `TONE`
+- Optional auto mode to skip confirmation (for non-interactive use)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repo and install dependencies:
 
@@ -86,7 +86,7 @@ Uninstall the hook:
 commit-companion uninstall-hook
 ```
 
-### 🔁 Optional: Global Installation
+### Optional: Global Installation
 
 To use commit-companion from any repo without activating a virtual environment:
 #### 1. Install globally:
@@ -115,18 +115,18 @@ commit-companion install-hook
 ```
 
 
-## 🧠 Roadmap Ideas
+## Roadmap Ideas
 - Config file support (.commitcompanion.json)
 - VS Code extension
 - Web version / hosted API
 - PyPI distribution (pip install commit-companion)
 
-## 💡 Why Use This?
+## Why Use This?
 Writing commit messages breaks flow. Commit Companion helps you:
 - Stay focused on your code
 - Standardize commits with no effort
 - Impress your teammates with clear, consistent commit messages
 
-## 📄 License
+## License
 
 MIT License.
