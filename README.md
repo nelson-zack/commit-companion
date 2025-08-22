@@ -1,10 +1,10 @@
 # Commit Companion
 
+![GitHub release (latest by tag)](https://img.shields.io/github/v/release/nelson-zack/commit-companion)
 [![PyPI version](https://img.shields.io/pypi/v/commit-companion.svg)](https://pypi.org/project/commit-companion/)
-[![GitHub release](https://img.shields.io/github/v/release/nelson-zack/commit-companion)](https://github.com/nelson-zack/commit-companion/releases)
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/commit-companion)
 [![Downloads](https://static.pepy.tech/badge/commit-companion)](https://pepy.tech/project/commit-companion)
-[![Python Version](https://img.shields.io/pypi/pyversions/commit_companion)](https://pypi.org/project/commit-companion/)
 
 [![License](https://img.shields.io/github/license/nelson-zack/commit-companion)](LICENSE)
 
