@@ -1,6 +1,12 @@
 # Commit Companion
 
-[![PyPI version](https://badge.fury.io/py/commit-companion.svg)](https://badge.fury.io/py/commit-companion)
+[![PyPI version](https://img.shields.io/pypi/v/commit-companion.svg)](https://pypi.org/project/commit-companion/)
+[![GitHub release](https://img.shields.io/github/v/release/nelson-zack/commit-companion)](https://github.com/nelson-zack/commit-companion/releases)
+
+[![Downloads](https://static.pepy.tech/badge/commit-companion)](https://pepy.tech/project/commit-companion)
+[![Python Version](https://img.shields.io/pypi/pyversions/commit-companion)](https://pypi.org/project/commit-companion/)
+
+[![License](https://img.shields.io/github/license/nelson-zack/commit-companion)](LICENSE)
 
 **AI-powered Git commit assistant that summarizes staged changes using GPT.**  
 Save time, stay in flow, and write better commit messages — automatically.
@@ -63,6 +69,11 @@ source ~/.zshrc   # or ~/.bashrc
 ```bash
 pip install --editable .
 ```
+
+## Requirements
+
+- Python 3.8 or later
+- An OpenAI API key (required for GPT functionality)
 
 ## Usage
 
@@ -174,3 +185,19 @@ Writing commit messages breaks flow. Commit Companion helps you:
 ## License
 
 MIT License.
+
+## Contributing
+
+Contributions, suggestions, and issue reports are welcome! To get started:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a pull request
+
+## Links
+
+- 📦 [PyPI Package](https://pypi.org/project/commit-companion/)
+- 🛠 [GitHub Repository](https://github.com/nelson-zack/commit-companion)
+- 📝 [Release Notes](https://github.com/nelson-zack/commit-companion/releases)
