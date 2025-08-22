@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='commit-companion',
     version='1.0.0',
-    py_modules=['cli', 'main', 'git_utils', 'ai_utils', 'utils'],
+    packages=find_packages(),
     install_requires=[
         'click',
         'openai',
@@ -11,7 +11,13 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'commit-companion=cli:cli',
+            'commit-companion=commit_companion.cli:cli',
         ],
     },
+    author='Zack Nelson',
+    description='Generate AI-powered Git commit messages from diffs.',
+    long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
+    license='MIT',
+    python_requires='>=3.7',
 )
