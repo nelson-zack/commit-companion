@@ -24,13 +24,15 @@ Save time, stay in flow, and write better commit messages — automatically.
 
 ---
 
-## Quick Start
-
-### 1. Install via pip (recommended):
+## 📦 Installation
 
 ```bash
 pip install commit-companion
 ```
+
+To use the CLI globally from any directory, install with `--user` or inside a virtual environment.
+
+## Quick Start
 
 Or, to install from source:
 
@@ -64,12 +66,6 @@ Then run:
 source ~/.zshrc   # or ~/.bashrc
 ```
 
-### 3. Install CLI tool locally:
-
-```bash
-pip install --editable .
-```
-
 ## Requirements
 
 - Python 3.8 or later
@@ -77,25 +73,18 @@ pip install --editable .
 
 ## Usage
 
+### Help & Options
+
+To see all available commands and flags:
+
+```bash
+commit-companion --help
+```
+
 ### CLI (manual):
 
 ```bash
-commit-companion suggest --tone casual --type feat
-```
-
-Will output something like:
-
-```bash
-feat: add basic functionality to README.md
-```
-
-Example usage:
-
-```bash
-git add <file>
-commit-companion suggest --tone casual --type feat
-git commit -m "your message here"
-git push
+commit-companion suggest
 ```
 
 ### Git Hook (auto):
@@ -131,40 +120,6 @@ Uninstall the hook:
 
 ```bash
 commit-companion uninstall-hook
-```
-
-### Optional: Global Installation
-
-To use commit-companion from any repo without activating a virtual environment:
-
-#### 1. Install globally:
-
-```bash
-pip install .
-```
-
-#### 2. Add your OpenAI key to your shell config (~/.zshrc or ~/.bashrc):
-
-```bash
-export OPENAI_API_KEY="sk-..."
-```
-
-#### 3. Ensure your Python bin path is on your system PATH:
-
-```bash
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.12/bin"
-```
-
-#### 4. Reload your shell:
-
-```bash
-source ~/.zshrc   # or ~/.bashrc
-```
-
-#### 5. Use it anywhere:
-
-```bash
-commit-companion install-hook
 ```
 
 ## Roadmap Ideas
